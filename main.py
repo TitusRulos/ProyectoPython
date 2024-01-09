@@ -7,6 +7,7 @@ from businnes.cammpers import crear_camper,listar_campers,load_campers_json,list
 def campers():      
     limpiar_pantalla()
     op=menu_campers()
+    print(op)
     if op==1:
        crear_camper()
        input("Clic cualquier teclas [continuar]: ")
