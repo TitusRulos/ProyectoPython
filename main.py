@@ -14,8 +14,7 @@ def campers():
     if op==2:
        listar_campers()
        input("Clic cualquier teclas [continuar]: ")
-    if op==3:
-        print("21")
+                
 def trainers():
     limpiar_pantalla()    
     op=menu_trainers()

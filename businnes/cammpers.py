@@ -29,7 +29,7 @@ def crear_camper():
         'direccion': direccion
     }
 
-    lista_campers.append(camper)
+    with open(file, "r") as
     print("Se creó el camper con éxito")
     guardar_json()
 ############################################################################################
