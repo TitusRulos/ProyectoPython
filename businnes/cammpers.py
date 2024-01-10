@@ -11,12 +11,11 @@ def load_campers_json():
     except Exception as e:
       print(f"Error al guardar el archivo: {e}")
 
-lista_campers = load_campers_json()
+lista_campers = {}
 
-#############################################################################################
 def crear_camper():
     nombre = input("Ingrese el nombre del cliente: ")
-    edad = int(input("Ingrese la edad del cliente: "))
+    edad = (input("Ingrese la edad del cliente: "))
     email = input("Ingrese el correo electrónico del cliente: ")
     telefono = input("Ingrese el número de teléfono del cliente: ")
     direccion = input("Ingrese la dirección del cliente: ")
@@ -28,11 +27,11 @@ def crear_camper():
         'telefono': telefono,
         'direccion': direccion
     }
-
-    with open(file, "r") as
+    lista_campers.update(camper)
+    print(lista_campers)
     print("Se creó el camper con éxito")
     guardar_json()
-############################################################################################
+
 
 
 
@@ -41,7 +40,7 @@ def guardar_json():
       with open(os.path.join("data", "campers.json"), 'w') as archivo_json:
         json.dump(lista_campers, archivo_json, indent=2)
         print("La lista de campers ha sido guardada")
-    except FileNotFoundError:
+    except FileNotFoundError: 
         print("El archivo no existe. Puede que aún no haya campers guardados.")
     except json.JSONDecodeError:
         print("Error al decodificar el archivo JSON . El formato podría ser incorrecto.")
