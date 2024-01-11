@@ -7,24 +7,33 @@ from businnes.cammpers import crear_camper,listar_campers,load_campers_json,list
 
 # funtions
 def campers():
-    load_campers_json()
     limpiar_pantalla()
-    op=menu_campers()
-    if op==1:
-       crear_camper()
-       input("Clic cualquier teclas [continuar]: ")
+    op = menu_campers()
+
+    if op == 1:
+        while True:
+            crear_camper()
+            volver = input("¿Crear otro camper? [y/n]: ")
+            if volver.lower() != "y":
+                break
+            
     if op==2:
        listar_campers()
        input("Clic cualquier teclas [continuar]: ")
+
+
 def trainers():
     limpiar_pantalla()    
     op=menu_trainers()
+
 def matriculas():
     limpiar_pantalla()    
     op=menu_matriculas()
+
 def aulas():
     limpiar_pantalla()    
     op=menu_aulas()
+
 def reportes():
     limpiar_pantalla()    
     op=menu_reportes()
