@@ -1,4 +1,4 @@
-from commons.utils import validar_opcion
+from utils import validar_opcion
 
 def menu_principal():
     print(" _Menú Principal_")

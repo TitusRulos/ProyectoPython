@@ -14,4 +14,5 @@ def validar_opcion(enunciando,inferior,superior):
                 print(f"Opción no está entre el intervalo de ({inferior}-{superior})")
         except ValueError:
             print("Por favor, introduce un número válido. ")
+
             

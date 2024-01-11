@@ -1,33 +1,3 @@
 {
-  "nombre": "1",
-  "edad": "1",
-  "email": "1",
-  "telefono": "1",
-  "direccion": "1",
-  "campers_inscritos": [
-    {
-      "nombre": "Juan",
-      "edad": "17",
-      "email": "asjdajsd",
-      "telefono": "32",
-      "direccion": "21",
-      "id": "132123"
-    },
-    {
-      "nombre": "123",
-      "edad": "23",
-      "email": "qweq",
-      "telefono": "21",
-      "direccion": "31",
-      "id": "123"
-    },
-    {
-      "nombre": "juan",
-      "edad": "17",
-      "email": "asda",
-      "telefono": "31",
-      "direccion": "132",
-      "id": "1231"
-    }
-  ]
+  
 }

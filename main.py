@@ -26,13 +26,16 @@ def trainers():
     limpiar_pantalla()    
     op=menu_trainers()
 
+
 def matriculas():
     limpiar_pantalla()    
     op=menu_matriculas()
 
+
 def aulas():
     limpiar_pantalla()    
     op=menu_aulas()
+
 
 def reportes():
     limpiar_pantalla()    

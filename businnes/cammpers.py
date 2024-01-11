@@ -1,6 +1,8 @@
 import json
 import os
-from ..commons.utils import limpiar_pantalla
+
+def limpiar_pantalla():
+    os.system('clear' if os.name == 'posix' else 'cls')  
 
 def load_campers_json():
     try:
